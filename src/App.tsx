@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import ChartContainer from "./features/chart/ChartContainer";
 
 function App() {

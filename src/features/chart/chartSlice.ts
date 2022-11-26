@@ -1,6 +1,5 @@
 import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {ChartDataType, ChartSliceTypeChart, ResponseType} from "./chartSliceType";
-import {logDOM} from "@testing-library/react";
 import axios from "axios";
 
 
@@ -17,7 +16,6 @@ export const getChartDataAsync = createAsyncThunk(
     'chart/fetchChart',
     async () => {
         const response = await axios.get('http://82.202.204.94/tmp/test.php')
-        // const response = getChartData();
         return response.data
     }
 );

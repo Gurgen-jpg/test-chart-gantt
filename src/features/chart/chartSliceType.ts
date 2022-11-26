@@ -6,6 +6,7 @@ export type ChartDataType = {
     id: number,
     period_end: string
     period_start: string
+    title: string
     sub?: ChartDataType[]
 }
 export type ResponseType = {
